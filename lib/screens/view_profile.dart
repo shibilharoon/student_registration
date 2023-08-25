@@ -110,13 +110,14 @@ class CardItem extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.all(20),
         width: double.infinity,
+        height: 90,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               title,
               style: TextStyle(
-                fontSize: 18,
+                fontSize: 15,
                 fontWeight: FontWeight.bold,
                 color: textColor,
               ),
@@ -125,7 +126,7 @@ class CardItem extends StatelessWidget {
             Text(
               content,
               style: TextStyle(
-                  fontSize: 24, fontWeight: FontWeight.bold, color: textColor),
+                  fontSize: 20, fontWeight: FontWeight.bold, color: textColor),
             ),
           ],
         ),

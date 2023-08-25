@@ -195,6 +195,7 @@ class _AddStudentWidgetState extends State<AddStudentWidget> {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
                   child: TextFormField(
+                    maxLength: 10,
                     inputFormatters: [
                       FilteringTextInputFormatter.allow(RegExp(r'[0-9]'))
                     ],

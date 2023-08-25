@@ -44,7 +44,7 @@ class _ListStudentWidgetState extends State<ListStudentWidget> {
 
   @override
   Widget build(BuildContext context) {
-    getAllStudents();
+    // getAllStudents();
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 56, 56, 58),
       appBar: AppBar(
@@ -128,7 +128,7 @@ class _ListStudentWidgetState extends State<ListStudentWidget> {
                   Widget? child) {
                 return ListView.separated(
                   itemBuilder: (ctx, index) {
-                    final data = searchedlist[index];
+                    final data = studentList[index];
                     return Padding(
                       padding: const EdgeInsets.fromLTRB(10, 5, 10, 0),
                       child: Card(

@@ -148,6 +148,7 @@ class _edit_studentState extends State<edit_student> {
                         height: 20,
                       ),
                       TextField(
+                        maxLength: 10,
                         controller: _phoneController,
                         decoration: const InputDecoration(
                           contentPadding: EdgeInsets.all(10),
