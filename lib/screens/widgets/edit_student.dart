@@ -51,12 +51,10 @@ class _edit_studentState extends State<edit_student> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-      backgroundColor: Colors.blueGrey,
+      backgroundColor: Color.fromARGB(255, 56, 56, 58),
       appBar: AppBar(
-        title: Center(
-          child: Text("E D I T"),
-        ),
-        backgroundColor: Colors.cyan,
+        title: Text("E D I T"),
+        backgroundColor: Color.fromARGB(255, 79, 24, 4),
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(bottom: Radius.circular(15))),
         actions: [
@@ -85,19 +83,19 @@ class _edit_studentState extends State<edit_student> {
                   backgroundColor: Colors.blueGrey,
                   backgroundImage: _selectedImage != null
                       ? FileImage(_selectedImage!)
-                      : AssetImage("assets/pngegg.png") as ImageProvider,
+                      : AssetImage("assets/Mascot PNG.png") as ImageProvider,
                 ),
                 ElevatedButton.icon(
-                    style:
-                        ElevatedButton.styleFrom(backgroundColor: Colors.cyan),
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Color.fromARGB(255, 79, 24, 4)),
                     onPressed: () {
                       _pickImageFromGallery();
                     },
                     icon: Icon(Icons.image),
                     label: Text("GALLERY")),
                 ElevatedButton.icon(
-                    style:
-                        ElevatedButton.styleFrom(backgroundColor: Colors.cyan),
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Color.fromARGB(255, 79, 24, 4)),
                     onPressed: () {
                       _pickImageFromCam();
                     },
@@ -113,6 +111,7 @@ class _edit_studentState extends State<edit_student> {
                       TextField(
                         controller: _nameController,
                         decoration: const InputDecoration(
+                          contentPadding: EdgeInsets.all(10),
                           fillColor: Colors.white,
                           filled: true,
                           border: OutlineInputBorder(),
@@ -125,6 +124,7 @@ class _edit_studentState extends State<edit_student> {
                       TextField(
                         controller: _ageController,
                         decoration: const InputDecoration(
+                          contentPadding: EdgeInsets.all(10),
                           fillColor: Colors.white,
                           filled: true,
                           border: OutlineInputBorder(),
@@ -137,6 +137,7 @@ class _edit_studentState extends State<edit_student> {
                       TextField(
                         controller: _placeController,
                         decoration: const InputDecoration(
+                          contentPadding: EdgeInsets.all(10),
                           fillColor: Colors.white,
                           filled: true,
                           border: OutlineInputBorder(),
@@ -149,6 +150,7 @@ class _edit_studentState extends State<edit_student> {
                       TextField(
                         controller: _phoneController,
                         decoration: const InputDecoration(
+                          contentPadding: EdgeInsets.all(10),
                           fillColor: Colors.white,
                           filled: true,
                           border: OutlineInputBorder(),
@@ -160,7 +162,7 @@ class _edit_studentState extends State<edit_student> {
                       ),
                       ElevatedButton.icon(
                           style: ElevatedButton.styleFrom(
-                              backgroundColor: Colors.cyan),
+                              backgroundColor: Color.fromARGB(255, 79, 24, 4)),
                           onPressed: () {
                             updateall();
                           },
